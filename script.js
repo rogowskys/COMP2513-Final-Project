@@ -1,5 +1,5 @@
 
-//fire the getData() function when the page loads
+//fire the getItems() function when the page loads
 $(document).ready(function () {
 
     //get all the item data
@@ -23,7 +23,7 @@ $(document).ready(function () {
 //this method will "get" all data, build the table rows and insert the HTML into the table body
 function getItems() {
 
-    //make a request to server.php
+    //make a request to API
     $.get("./api/read.php", function (data) {
 
         //iterate over the JSON response, building an HTML string
@@ -51,7 +51,7 @@ function getItems() {
 //this method will "get" an item record (by item_id) and open a Dialog to view the details (e.g. order details)
 function getOneByID(id) {
 
-    //make a request to server.php
+    //make a request to API
     $.get("./api/single_read.php/?id=" + id, function (data) {
 
         //build the dynamic HTML
@@ -125,11 +125,4 @@ function convertFormToJSON(form) {
 }
 
 
-
-
-
-
-// $('#Modal').on('shown.bs.modal', function () {
-//     $('#myInput').trigger('focus')
-//   });
 
