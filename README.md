@@ -7,3 +7,6 @@ A website that allows a user to maintain a database of purchased items.  User is
 Built for use with LAMP
 
 Implements a fully RESTful API backend using PHP/MySQL
+
+
+Hosted live at https://project.nogorogo.ca
