@@ -2,8 +2,8 @@
     class Database {
         private $host = "localhost";
         private $database_name = "itemsdb";
-        private $username = "root";
-        private $password = "passw0rd";
+        private $username = "CHANGEME";
+        private $password = "CHANGEME";
         public $conn;
         public function getConnection(){
             $this->conn = null;
